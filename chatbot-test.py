@@ -1,0 +1,86 @@
+
+# coding: utf-8
+
+# In[1]:
+
+import pandas as pd
+import numpy as np
+
+from sklearn.svm import LinearSVC
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.naive_bayes import MultinomialNB, BernoulliNB
+from sklearn.linear_model import RidgeClassifier
+from sklearn.preprocessing import LabelEncoder
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+import nltk
+
+print('Downloading nltk packages')
+nltk.download('rslp')
+nltk.download('stopwords')
+stemmer = nltk.stem.RSLPStemmer()
+stopwords = nltk.corpus.stopwords.words('portuguese')
+
+data = pd.read_csv('data.csv', delimiter=';', header=0)
+
+# clf = LinearSVC()
+# clf = AdaBoostClassifier()
+clf = MultinomialNB()
+# clf = BernoulliNB()
+# clf = RidgeClassifier()
+    
+
+
+# In[2]:
+
+def stemmize(text):
+    words = []
+    for w in text.split():
+        words.append(stemmer.stem(w))
+    return ' '.join(words)
+
+def remove_stopwords(text):
+    words = []
+    for w in text.split():
+        if w not in stopwords:
+            words.append(w)
+    return ' '.join(words)
+
+
+# In[3]:
+
+encoder = LabelEncoder()
+vectorizer = TfidfVectorizer()
+data['frase'] = data['frase'].apply(remove_stopwords)
+data['frase'] = data['frase'].apply(stemmize)
+X, y = data['frase'], data['intencao']
+X = vectorizer.fit_transform(data['frase'])
+
+
+# In[4]:
+
+from sklearn.model_selection import train_test_split 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3, random_state=42)
+
+clf.fit(X_train, y_train)
+score = clf.score(X_test, y_test)
+print("Classificador com acerto de {0:.1f}%".format(score*100))
+
+
+# In[5]:
+
+def predict(text):
+    text = remove_stopwords(text)
+    text = stemmize(text)
+    vect = vectorizer.transform([text])[0]
+    predictions = [{'intencao': k, 'prob':v} for k,v in zip(clf.classes_, clf.predict_proba(vect)[0])]
+    return list(sorted(predictions, key=lambda k: k['prob'], reverse=True))
+
+
+# In[ ]:
+
+while True:
+    text = input()
+    predicao = predict(text)
+    print(predicao[0])
+

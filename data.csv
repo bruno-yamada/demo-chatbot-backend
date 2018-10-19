@@ -1,0 +1,159 @@
+frase;intencao
+com certeza;SIM
+claro;SIM
+exato;SIM
+okay;SIM
+ok;SIM
+si;SIM
+s;SIM
+pode;SIM
+ta;SIM
+confirmo;SIM
+correto;SIM
+certo;SIM
+isso;SIM
+aham;SIM
+uhum;SIM
+sim;SIM
+vamos;SIM
+confirmo;SIM
+ta certo;SIM
+por favor;SIM
+pode ser;SIM
+certo;SIM
+sim claro;SIM
+pode sim claro;SIM
+otimo;SIM
+confirmo;SIM
+claro;SIM
+pode fazer;SIM
+nao posso;NAO
+nao pode;NAO
+ta errado;NAO
+incorreto;NAO
+nao confirmo;NAO
+jamais;NAO
+nunca;NAO
+nem;NAO
+naum;NAO
+nao;NAO
+n;NAO
+nao posso;NAO
+n quero;NAO
+nao sei;NAO
+n qro;NAO
+nao quero;NAO
+n quero nao;NAO
+ainda nao da;NAO
+ainda nao;NAO
+nao quero nada nao;NAO
+pra hoje nao;NAO
+ainda nao consigo;NAO
+tem um cardapio;SOLICITA_CARDAPIO
+quais as opções?;SOLICITA_CARDAPIO
+tem cardapio;SOLICITA_CARDAPIO
+quais sabores?;SOLICITA_CARDAPIO
+pode me mandar o menu;SOLICITA_CARDAPIO
+me envia o menu por favor;SOLICITA_CARDAPIO
+menu;SOLICITA_CARDAPIO
+cardapio;SOLICITA_CARDAPIO
+quero saber as opcoes;SOLICITA_CARDAPIO
+qual recheio tem?;SOLICITA_CARDAPIO
+quais recheios tem?;SOLICITA_CARDAPIO
+me envia as opçoes;SOLICITA_CARDAPIO
+queria saber as opcoes de pizza;SOLICITA_CARDAPIO
+bom dia, queria saber o cardapio;SOLICITA_CARDAPIO
+boa noite, precisava do menu;SOLICITA_CARDAPIO
+boa tarde, pode me mandar o cardapio?;SOLICITA_CARDAPIO
+tem alguma promoção?;SOLICITA_CARDAPIO
+bom dia, manda o menu;SOLICITA_CARDAPIO
+boa noite, envia as opcoes;SOLICITA_CARDAPIO
+boa tarde, manda o cardapio;SOLICITA_CARDAPIO
+noite, manda os sabores por favor;SOLICITA_CARDAPIO
+oi, voces cobram taxa de entrega?;INFORMACA_FRETE
+cobram pra entregar?;INFORMACA_FRETE
+ola, vcs entregam de graça?;INFORMACA_FRETE
+boa noite, quanto é a taxa de entrega?;INFORMACA_FRETE
+boa tarde, cobram frete?;INFORMACA_FRETE
+quanto fica a taxa de entrga?;INFORMACA_FRETE
+qual o valor do frete?;INFORMACA_FRETE
+oi, quanto fica para entregar?;INFORMACA_FRETE
+demora muito pra entregar?;INFORMACA_FRETE
+oi, queria saber o valor pra entrega;INFORMACA_FRETE
+cobram tarifa pra entregar?;INFORMACA_FRETE
+sai mais caro pra entrega;INFORMACA_FRETE
+o frete é gratuito?;INFORMACA_FRETE
+tem como fazer a taxa de graça?;INFORMACA_FRETE
+e entrega, voces cobram?;INFORMACA_FRETE
+pra enviar e cobrado?;INFORMACA_FRETE
+se mandar entregar sai mais caro?;INFORMACA_FRETE
+é caro pra entrega?;INFORMACA_FRETE
+tem como entregar?;INFORMACA_FRETE
+entrega na minha casa;INFORMACA_FRETE
+queria que fosse entregue;INFORMACA_FRETE
+recebem por cartao de crédito?;FORMA_PAGAMENTO
+tem como pagar com vale alimentação?;FORMA_PAGAMENTO
+aceitam vale refeicao?;FORMA_PAGAMENTO
+tem maquinha de cartao?;FORMA_PAGAMENTO
+precisa pagar com dinheiro;FORMA_PAGAMENTO
+posso passar no visa;FORMA_PAGAMENTO
+posso pagar com mastercard;FORMA_PAGAMENTO
+aceitam nubank;FORMA_PAGAMENTO
+consigo pagar com hipercard;FORMA_PAGAMENTO
+tem como pagar com cartao de credito?;FORMA_PAGAMENTO
+posso pagar com vale alimentacao;FORMA_PAGAMENTO
+consigo pagar com v.a.;FORMA_PAGAMENTO
+aceitam v.f;FORMA_PAGAMENTO
+podem trazer a maquininha de cartao?;FORMA_PAGAMENTO
+posso pagar no cartao;FORMA_PAGAMENTO
+aceitam cartao;FORMA_PAGAMENTO
+queria pagar com cartao de credito;FORMA_PAGAMENTO
+consigo parcelar;FORMA_PAGAMENTO
+da pra parcelar?;FORMA_PAGAMENTO
+queria comprar parcelado;FORMA_PAGAMENTO
+tem como dividir o valor;FORMA_PAGAMENTO
+consigo dividir o pagamento?;FORMA_PAGAMENTO
+queria uma pizza;COMPRAR_PIZZA
+voces vendem pizza?;COMPRAR_PIZZA
+queria uma pizza de atum;COMPRAR_PIZZA
+precisava comprar uma pizza, voces tem;COMPRAR_PIZZA
+bom dia, queria uma pizza;COMPRAR_PIZZA
+boa noite, estao assando piza?;COMPRAR_PIZZA
+boa tarde, tava afim de uma pizza;COMPRAR_PIZZA
+bom dia, queria uma pizza;COMPRAR_PIZZA
+boa noite, queria uma pizza de atum e uma a moda da casa;COMPRAR_PIZZA
+quero comprar piza;COMPRAR_PIZZA
+tem pizza?;COMPRAR_PIZZA
+estao assando pizza ainda?;COMPRAR_PIZZA
+quanto custa a pizza?;COMPRAR_PIZZA
+tem pizza grande?;COMPRAR_PIZZA
+quero comprar uma pizza de 4 queijos;COMPRAR_PIZZA
+ja ta saindo pizza?;COMPRAR_PIZZA
+posso pedir pizza ja;COMPRAR_PIZZA
+pizza;COMPRAR_PIZZA
+comprar pizza;COMPRAR_PIZZA
+pedir pizza;COMPRAR_PIZZA
+piza;COMPRAR_PIZZA
+tem piza?;COMPRAR_PIZZA
+bom dia;SAUDACAO
+boa noite;SAUDACAO
+boa tarde;SAUDACAO
+oi;SAUDACAO
+ola;SAUDACAO
+oie;SAUDACAO
+ola!;SAUDACAO
+bom dia :);SAUDACAO
+noite;SAUDACAO
+b noite;SAUDACAO
+opa, beleza;SAUDACAO
+blz?;SAUDACAO
+oi, tudo bem?;SAUDACAO
+tudo bem com voce?;SAUDACAO
+oi, tem alguem ai?;SAUDACAO
+alguem ai;SAUDACAO
+tem gente?;SAUDACAO
+ola;SAUDACAO
+boa noite;SAUDACAO
+tarde;SAUDACAO
+opa, bom dia;SAUDACAO
+oi, bom dia;SAUDACAO

@@ -1,18 +1,16 @@
 
 # coding: utf-8
 
-
-import pandas as pd
-import numpy as np
-
-from sklearn.svm import LinearSVC
-from sklearn.ensemble import AdaBoostClassifier
-from sklearn.naive_bayes import MultinomialNB, BernoulliNB
-from sklearn.linear_model import RidgeClassifier
-from sklearn.preprocessing import LabelEncoder
-from sklearn.feature_extraction.text import TfidfVectorizer
-
 import nltk
+import numpy as np
+import pandas as pd
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import RidgeClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import BernoulliNB, MultinomialNB
+from sklearn.preprocessing import LabelEncoder
+from sklearn.svm import LinearSVC
 
 print('Downloading nltk packages')
 nltk.download('rslp')
@@ -55,7 +53,6 @@ X = vectorizer.fit_transform(data['frase'])
 
 
 
-from sklearn.model_selection import train_test_split 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3, random_state=42)
 
 clf.fit(X_train, y_train)
@@ -78,4 +75,3 @@ while True:
     text = input()
     predicao = predict(text)
     print('> Predição:', predicao[0])
-

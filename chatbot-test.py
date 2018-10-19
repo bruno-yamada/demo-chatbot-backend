@@ -1,7 +1,6 @@
 
 # coding: utf-8
 
-# In[1]:
 
 import pandas as pd
 import numpy as np
@@ -31,7 +30,6 @@ clf = MultinomialNB()
     
 
 
-# In[2]:
 
 def stemmize(text):
     words = []
@@ -47,7 +45,6 @@ def remove_stopwords(text):
     return ' '.join(words)
 
 
-# In[3]:
 
 encoder = LabelEncoder()
 vectorizer = TfidfVectorizer()
@@ -57,7 +54,6 @@ X, y = data['frase'], data['intencao']
 X = vectorizer.fit_transform(data['frase'])
 
 
-# In[4]:
 
 from sklearn.model_selection import train_test_split 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3, random_state=42)
@@ -67,7 +63,6 @@ score = clf.score(X_test, y_test)
 print("Classificador com acerto de {0:.1f}%".format(score*100))
 
 
-# In[5]:
 
 def predict(text):
     text = remove_stopwords(text)
@@ -77,10 +72,10 @@ def predict(text):
     return list(sorted(predictions, key=lambda k: k['prob'], reverse=True))
 
 
-# In[ ]:
-
 while True:
+    print('-'*10)
+    print('Mensagem:')
     text = input()
     predicao = predict(text)
-    print(predicao[0])
+    print('> Predição:', predicao[0])
 
